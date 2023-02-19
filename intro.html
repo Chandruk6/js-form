@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass values</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        color: aqua;
+    }
+    .output{
+       display: grid;
+       align-items: center;
+       justify-content: center;
+    }
+</style>
+<body>
+    <h1>Register-Form</h1>
+    <div class="output">
+    <h3>NAME: <span id="Name"></span></h3>
+    <h3>EMAIL: <span id="Email"></span></h3>
+    <h3>MOBILENO: <span id="MobileNo"></span></h3>
+    <h3>PASSWORD: <span id="password"></span></h3>
+    <h3>CONFIRM-PASSWORD: <span id="password2"></span></h3>
+    <h3>GENDER: <span id="gender"></span></h3></div>
+    <Script>
+        const name=localStorage.getItem('Name');
+        const Email=localStorage.getItem('Email');
+        const MobileNo=localStorage.getItem('MobileNo');
+        const password=localStorage.getItem('password');
+        const password2=localStorage.getItem('password2');
+        const gender=localStorage.getItem('gender');
+document.getElementById('Name').textContent=name;
+document.getElementById('Email').innerHTML=Email;
+document.getElementById('MobileNo').innerHTML=MobileNo;
+document.getElementById('password').innerHTML=password;
+document.getElementById('password2').innerHTML=password2;
+document.getElementById('gender').innerHTML=gender;
+
+    </SCript>
+</body>
+</html>
